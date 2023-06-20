@@ -1,0 +1,349 @@
+Screen1 As screen:
+
+    Button2 As button:
+        Height: =36
+        OnSelect: =Navigate(Screen2)
+        Text: ="Move Employee"
+        Width: =192
+        X: =1137
+        Y: =702
+        ZIndex: =1
+
+    Gallery1 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =RGBA(215, 223, 240, 1)
+        Height: =593
+        Items: =Employees
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =78
+        Width: =1366
+        Y: =109
+        ZIndex: =2
+
+        "FName As 'Text input'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Mode: ='TextInputCanvas.Mode'.SingleLine
+            Value: =ThisItem.Title
+            Width: =102
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+        "LName As 'Text input'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =30
+            Mode: ='TextInputCanvas.Mode'.SingleLine
+            Value: =ThisItem.LastName
+            Width: =88
+            X: =124
+            Y: =4
+            ZIndex: =2
+
+        "number As 'Text input'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Mode: ='TextInputCanvas.Mode'.SingleLine
+            Value: =ThisItem.PhoneNumber
+            Width: =116
+            X: =232
+            Y: =6
+            ZIndex: =3
+
+        "empid As 'Text input'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =30
+            Mode: ='TextInputCanvas.Mode'.SingleLine
+            Value: =ThisItem.EmpId
+            Width: =82
+            X: =1146
+            Y: =10
+            ZIndex: =4
+
+        "address As 'Text input'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Mode: ='TextInputCanvas.Mode'.SingleLine
+            Value: =ThisItem.Address
+            Width: =106
+            X: =1018
+            Y: =8
+            ZIndex: =5
+
+        gender As Dropdown.pcfdataset:
+            DefaultSelectedItems: =ThisItem.Gender
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Items: |
+                =Choices(Employees.Gender)
+            Width: =94
+            X: =358
+            Y: =8
+            ZIndex: =6
+
+            Value1 As pcfDataField.textualColumn:
+                FieldDisplayName: ="Value"
+                FieldName: ="Value"
+                FieldType: ="s"
+                FieldVariantName: ="textualColumn"
+                Order: =1
+                ZIndex: =12
+
+        TOEmployee As Dropdown.pcfdataset:
+            DefaultSelectedItems: =ThisItem.TypeOfEmployee
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Items: |+
+                =Choices(Employees.TypeOfEmployee)
+                
+            Width: =102
+            X: =636
+            Y: =8
+            ZIndex: =7
+
+            Value2 As pcfDataField.textualColumn:
+                FieldDisplayName: ="Value"
+                FieldName: ="Value"
+                FieldType: ="s"
+                FieldVariantName: ="textualColumn"
+                Order: =1
+                ZIndex: =13
+
+        TypeofEmploymnt As Dropdown.pcfdataset:
+            DefaultSelectedItems: =ThisItem.TypeOfEmployment
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Items: =Choices(Employees.TypeOfEmployment)
+            Width: =116
+            X: =762
+            Y: =8
+            ZIndex: =8
+
+            Value3 As pcfDataField.textualColumn:
+                FieldDisplayName: ="Value"
+                FieldName: ="Value"
+                FieldType: ="s"
+                FieldVariantName: ="textualColumn"
+                Order: =1
+                ZIndex: =14
+
+        "dob As 'Date picker'":
+            AccessibleLabel: |
+                =
+            DisplayMode: =DisplayMode.Edit
+            Height: =30
+            Value: |
+                =ThisItem.DOB
+            Width: =102
+            X: =900
+            Y: =8
+            ZIndex: =9
+
+        "branch As 'Text input'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =30
+            Mode: ='TextInputCanvas.Mode'.SingleLine
+            Value: |
+                =ThisItem.Branch
+            Width: =88
+            X: =1250
+            Y: =4
+            ZIndex: =10
+
+        "mail As 'Text input'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Mode: ='TextInputCanvas.Mode'.SingleLine
+            Value: =ThisItem.email
+            Width: =152
+            X: =462
+            Y: =8
+            ZIndex: =11
+
+        ButtonCanvas2 As Button:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            OnSelect: |-
+                =If(
+                    IsBlank(
+                        LookUp(
+                            employeecollection,
+                            ID = ThisItem.ID
+                        )
+                    ),
+                    Collect(
+                        employeecollection,
+                        ThisItem
+                    )
+                );
+                UpdateIf(employeecollection,ID=ThisItem.ID,{Title:FName.Value,LastName:LName.Value,PhoneNumber:number.Value,Gender:gender.Selected, email:mail.Value,TypeOfEmployee:TOEmployee.Selected,TypeOfEmployment:TypeofEmploymnt.Selected,DOB:dob.Value,Address:address,EmpId:empid.Value, Branch:branch.Value})
+            Text: |-
+                ="save
+                "
+            Visible: |+
+                =true
+                
+                
+                
+            Width: =96
+            X: =1250
+            Y: =54
+            ZIndex: =12
+
+    BadgeCanvas1 As Badge:
+        Appearance: ='BadgeCanvas.Appearance'.Tint
+        Content: =
+        DisplayMode: =DisplayMode.Edit
+        Height: =71
+        Shape: ='BadgeCanvas.Shape'.Square
+        ThemeColor: ='BadgeCanvas.ThemeColor'.Brand
+        Width: =1366
+        X: =0
+        Y: =0
+        ZIndex: =3
+
+    Button3 As button:
+        Height: =36
+        OnSelect: =Patch(Employees,ShowColumns(colGridUpdates3,
+        Text: |-
+            ="Save
+            "
+        Width: =146
+        X: =588
+        Y: =702
+        ZIndex: =4
+
+    TextCanvas1 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =0
+        Y: =19
+        ZIndex: =5
+
+    TextCanvas1_1 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =118
+        Y: =19
+        ZIndex: =6
+
+    TextCanvas1_2 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =38
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =196
+        Y: =19
+        ZIndex: =7
+
+    TextCanvas1_3 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =256
+        Y: =22
+        ZIndex: =8
+
+    TextCanvas1_4 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =353
+        Y: =19
+        ZIndex: =9
+
+    TextCanvas1_5 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =486
+        Y: =25
+        ZIndex: =10
+
+    TextCanvas1_6 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =638
+        Y: =22
+        ZIndex: =11
+
+    TextCanvas1_7 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =776
+        Y: =25
+        ZIndex: =12
+
+    TextCanvas1_8 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =914
+        Y: =22
+        ZIndex: =13
+
+    TextCanvas1_9 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =1010
+        Y: =25
+        ZIndex: =14
+
+    TextCanvas1_10 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =1121
+        Y: =25
+        ZIndex: =15
+
+    TextCanvas1_11 As Text:
+        Alignment: ='TextCanvas.Alignment'.Start
+        As: ='TextCanvas.As'.Span
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Weight: ='TextCanvas.Weight'.Regular
+        Width: =96
+        X: =1250
+        Y: =25
+        ZIndex: =16
+

@@ -1,0 +1,27 @@
+{
+  "72bad4f2-e52e-42c0-84e8-c0730d3bb143": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://pratiantechnologies226.sharepoint.com/sites/ROS": {
+        "dataSources": {
+          "Employees": {
+            "tableName": "2b422d2b-984e-496a-bcce-bb83b51106dd"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Employees"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "72bad4f2-e52e-42c0-84e8-c0730d3bb143"
+  }
+}
