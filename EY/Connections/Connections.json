@@ -47,5 +47,27 @@
     "dependencies": {},
     "dependents": [],
     "id": "0984c18a-8015-4a43-8dca-24335bb2422e"
+  },
+  "bbfeb1c6-d643-4907-bd4e-b743427b4627": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://pratiantechnologies226.sharepoint.com/sites/ROS": {
+        "dataSources": {
+          "ROS Restaurants": {
+            "tableName": "20638e50-3444-4e47-8f3c-84f32bd2ef7b"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "ROS Restaurants"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "bbfeb1c6-d643-4907-bd4e-b743427b4627"
   }
 }

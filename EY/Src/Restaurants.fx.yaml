@@ -1,2 +1,97 @@
-Restaurants As screen:
+"Restaurants As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+
+    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(102, 182, 227, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            Image5_4 As image:
+                Height: =74
+                Image: ='download-removebg-preview (8)'
+                Width: =116
+                X: =120
+                Y: =14
+                ZIndex: =1
+
+        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+            Container2 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutMinHeight: =40
+                LayoutMinWidth: =250
+                ZIndex: =1
+
+                headerRestaurantID As button:
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: ="Restaurant ID"
+                    X: =3
+                    ZIndex: =1
+
+                headerRestaurantName As button:
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: ="Restaurant Name"
+                    Width: =188
+                    X: =163
+                    ZIndex: =2
+
+                headerContact As button:
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: ="Contact"
+                    X: =351
+                    ZIndex: =3
+
+                headerManagerName As button:
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: ="Manager Name"
+                    X: =511
+                    ZIndex: =4
+
+                headerLocation As button:
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: ="Location"
+                    X: =671
+                    ZIndex: =5
+
+                headerEmployeeCapacity As button:
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: ="Employee Capacity"
+                    Width: =232
+                    X: =831
+                    ZIndex: =6
 
