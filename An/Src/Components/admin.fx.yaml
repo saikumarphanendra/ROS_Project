@@ -30,6 +30,7 @@ admin As CanvasComponent:
         Button5 As button:
             Fill: =RGBA(102, 182, 227, 1)
             OnSelect: =Select(Parent)
+            Size: =12
             Text: =ThisItem.Value
             X: =4
             Y: =11

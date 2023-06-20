@@ -199,13 +199,6 @@ managerDashboard As screen:
         Y: =100
         ZIndex: =20
 
-    manager_2 As manager:
-        Height: =412
-        Visible: =menu
-        Width: =167
-        Y: =92
-        ZIndex: =21
-
     Button2 As button:
         Fill: =RGBA(102, 182, 227, 1)
         Height: =55
