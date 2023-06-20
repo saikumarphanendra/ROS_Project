@@ -9,13 +9,6 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "https://pratian686.sharepoint.com/sites/Test": {
-        "dataSources": {
-          "Access Card": {
-            "tableName": "5c3c1baa-6123-4a3c-8c56-80b6dddb81bb"
-          }
-        }
-      },
       "https://pratiantechnologies226.sharepoint.com/sites/ROS": {
         "dataSources": {
           "Admin login": {
@@ -49,8 +42,7 @@
       "Restaurant Manager",
       "Admin login",
       "Employee login",
-      "Restaurent login",
-      "Access Card"
+      "Restaurent login"
     ],
     "dependencies": {},
     "dependents": [],

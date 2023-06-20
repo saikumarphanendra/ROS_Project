@@ -1,12 +1,12 @@
-"'admin Dashboard' As screen":
+"'admin Dashboard_1' As screen":
 
-    Rectangle2 As rectangle:
+    Rectangle2_3 As rectangle:
         Fill: =RGBA(102, 182, 227, 1)
         Height: =92
         Width: =1366
         ZIndex: =1
 
-    Rectangle3 As rectangle:
+    Rectangle3_2 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Height: =152
@@ -16,7 +16,7 @@
         Y: =161
         ZIndex: =2
 
-    Label5 As label:
+    Label5_4 As label:
         Align: =Align.Center
         Fill: =RGBA(219, 219, 219, 1)
         Font: =Font.'Lato Black'
@@ -28,7 +28,7 @@
         Y: =279
         ZIndex: =3
 
-    Label7 As label:
+    Label7_4 As label:
         Align: =Align.Center
         Font: =Font.Lato
         Height: =76
@@ -38,12 +38,10 @@
         Y: =182
         ZIndex: =4
 
-    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        BorderColor: =RGBA(202, 202, 202, 1)
-        BorderThickness: =1
+    "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =339
-        Items: =Branches
+        Items: =lists
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(adminDashboardList)
@@ -53,7 +51,7 @@
         Y: =429
         ZIndex: =5
 
-        Title1 As label:
+        Title1_2 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =41
             OnSelect: =Select(Parent)
@@ -69,7 +67,7 @@
             Y: =34
             ZIndex: =2
 
-        Subtitle1 As label:
+        Subtitle1_2 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =55
             OnSelect: =Select(Parent)
@@ -85,21 +83,21 @@
             Y: =27
             ZIndex: =3
 
-        Separator1 As rectangle:
+        Separator1_2 As rectangle:
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =96
             ZIndex: =5
 
-        Rectangle4 As rectangle:
-            Height: =Parent.TemplateHeight - Separator1.Height
+        Rectangle4_2 As rectangle:
+            Height: =Parent.TemplateHeight - Separator1_2.Height
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
             Width: =4
             ZIndex: =6
 
-    Label7_1 As label:
+    Label7_7 As label:
         Align: =Align.Center
         Font: =Font.Lato
         Height: =76
@@ -110,7 +108,7 @@
         Y: =182
         ZIndex: =6
 
-    Label5_1 As label:
+    Label5_7 As label:
         Align: =Align.Center
         Fill: =RGBA(219, 219, 219, 1)
         Font: =Font.'Lato Black'
@@ -122,20 +120,20 @@
         Y: =279
         ZIndex: =7
 
-    Component1_1 As admin:
+    Component1_2 As admin:
         Height: =620
         Visible: =menu
         Width: =172
         Y: =92
         ZIndex: =8
 
-    Button3_1 As button:
+    Button3_9 As button:
         BorderColor: =RGBA(202,202,202,1)
         Color: =RGBA(219, 219, 219, 1)
         Fill: =RGBA(0, 0, 0, 0)
         Height: =152
         HoverFill: =RGBA(202, 202, 202, 0.32)
-        OnSelect: =Navigate('admin Dashboard_1')
+        OnSelect: =Set(lists,Employees)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
@@ -146,13 +144,13 @@
         Y: =176
         ZIndex: =9
 
-    Button3 As button:
+    Button3_6 As button:
         BorderColor: =RGBA(202,202,202,1)
         Color: =RGBA(219, 219, 219, 1)
         Fill: =RGBA(0, 0, 0, 0)
         Height: =152
         HoverFill: =RGBA(209, 205, 205, 0.27)
-        OnSelect: =
+        OnSelect: =Set(lists,Branches)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
@@ -163,14 +161,14 @@
         Y: =176
         ZIndex: =10
 
-    Icon2 As icon.Hamburger:
+    Icon2_4 As icon.Hamburger:
         Icon: =Icon.Hamburger
         OnSelect: =If(menu=true,Set(menu,false),Set(menu,true))
         X: =40
         Y: =14
         ZIndex: =11
 
-    Label7_3 As label:
+    Label7_8 As label:
         Align: =Align.Center
         Font: =Font.Lato
         Height: =76
@@ -181,7 +179,7 @@
         Y: =182
         ZIndex: =12
 
-    Label5_2 As label:
+    Label5_8 As label:
         Align: =Align.Center
         Fill: =RGBA(219, 219, 219, 1)
         Font: =Font.'Lato Black'
@@ -193,13 +191,13 @@
         Y: =279
         ZIndex: =13
 
-    Button3_5 As button:
+    Button3_10 As button:
         BorderColor: =RGBA(202,202,202,1)
         Color: =RGBA(219, 219, 219, 1)
         Fill: =RGBA(0, 0, 0, 0)
         Height: =152
         HoverFill: =RGBA(201, 197, 197, 0.3)
-        OnSelect: =Navigate('admin Dashboard_2')
+        OnSelect: =Set(lists,'Restaurant Manager')
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
@@ -210,7 +208,7 @@
         Y: =177
         ZIndex: =14
 
-    PieChart1 As pieChart:
+    PieChart1_2 As pieChart:
         Height: =339
         ItemBorderColor: =RGBA(219, 219, 219, 1)
         Items: =lists
@@ -219,7 +217,7 @@
         Y: =415
         ZIndex: =17
 
-    Label10 As label:
+    Label10_2 As label:
         FontWeight: =FontWeight.Semibold
         Height: =54
         Size: =20
@@ -229,7 +227,7 @@
         Y: =107
         ZIndex: =18
 
-    Icon6 As icon.Person:
+    Icon6_1 As icon.Person:
         Icon: =Icon.Person
         OnSelect: |
             =Set(clicked,!clicked);
@@ -237,7 +235,7 @@
         Y: =14
         ZIndex: =19
 
-    Image5 As image:
+    Image5_1 As image:
         Height: =74
         Image: ='download-removebg-preview (8)'
         Width: =116
@@ -245,7 +243,7 @@
         Y: =14
         ZIndex: =20
 
-    Button4 As button:
+    Button4_1 As button:
         Fill: =RGBA(0, 94, 146, 1)
         RadiusBottomLeft: =15
         RadiusBottomRight: =15
@@ -256,15 +254,4 @@
         X: =1206
         Y: =88
         ZIndex: =21
-
-    Label12 As label:
-        BorderColor: =RGBA(202, 202, 202, 1)
-        BorderThickness: =1
-        Height: =54
-        Size: =20
-        Text: ="Branch Name"
-        Width: =640
-        X: =230
-        Y: =375
-        ZIndex: =22
 
