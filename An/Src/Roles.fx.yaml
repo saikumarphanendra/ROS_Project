@@ -1,0 +1,36 @@
+Roles As screen:
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =4
+
+        Button3_2 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            OnSelect: =Navigate('Admin Login')
+            Text: ="Login as Admin"
+            Width: =350
+            X: =492
+            Y: =224
+            ZIndex: =1
+
+        Button3_3 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            OnSelect: =Navigate('Employee Login')
+            Text: ="Login as Employee"
+            Width: =350
+            X: =492
+            Y: =325
+            ZIndex: =2
+
+        Button3_4 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            OnSelect: =Navigate('Restaurent Manager Login')
+            Text: ="Login as Restaurent Manager"
+            Width: =350
+            X: =492
+            Y: =426
+            ZIndex: =3
+
