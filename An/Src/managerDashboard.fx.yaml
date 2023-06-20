@@ -166,8 +166,8 @@ managerDashboard As screen:
         ItemBorderColor: =RGBA(219, 219, 219, 1)
         Items: =lists
         Width: =496
-        X: =870
-        Y: =447
+        X: =869
+        Y: =432
         ZIndex: =17
 
     Label10_1 As label:
