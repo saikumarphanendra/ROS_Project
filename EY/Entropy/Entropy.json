@@ -1,9 +1,12 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "06/20/2023 15:18:02",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -16,11 +19,46 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
+  "OverridablePropertiesEntry": {
+    "App": {}
+  },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
+  "PublishOrderIndices": {
+    "App": 0
+  },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 1.3763125,
+    "ControlCount": {
+      "0007d5660c51443ebd6a4767eef30df7": 2,
+      "270f2009d8dd45f0885fc10c5c62b1de": 3,
+      "addMedia": 1,
+      "arrow": 2,
+      "attachments": 1,
+      "ba545067bd2848bda3610a947b0d51c3": 1,
+      "button": 13,
+      "circle": 6,
+      "combobox": 4,
+      "datepicker": 1,
+      "form": 5,
+      "gallery": 6,
+      "galleryTemplate": 6,
+      "group": 8,
+      "groupContainer": 9,
+      "icon": 12,
+      "image": 9,
+      "label": 111,
+      "listbox": 1,
+      "pieChart": 2,
+      "rectangle": 26,
+      "screen": 18,
+      "text": 16,
+      "typedDataCard": 23
+    },
+    "DeserializationLoadTime": 3.4379018
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }
