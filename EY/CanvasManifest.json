@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 7,
+    "BindingErrorCount": 11,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -139,6 +139,8 @@
     "Success",
     "Success_1",
     "admin Dashboard",
+    "admin Dashboard_2",
+    "admin Dashboard_1",
     "managerDashboard",
     "Emp Dashboard",
     "Leave Approval",

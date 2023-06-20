@@ -183,13 +183,6 @@ managerDashboard As screen:
         Y: =107
         ZIndex: =18
 
-    manager_2 As manager:
-        Height: =412
-        Visible: =menu
-        Width: =167
-        Y: =92
-        ZIndex: =21
-
     Icon4 As icon.Person:
         Icon: =Icon.Person
         X: =1291
