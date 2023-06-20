@@ -3738,198 +3738,6 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 9
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -4309,10 +4117,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 33,
+                  "charLength": 31,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountRows('Restaurant Manager_1')"
+                    "text": "CountRows('Restaurant Manager')"
                   }
                 }
               },
@@ -4586,10 +4394,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 33,
+                  "charLength": 31,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountRows('Restaurant Manager_1')"
+                    "text": "CountRows('Restaurant Manager')"
                   }
                 }
               },
@@ -4746,10 +4554,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 33,
+                  "charLength": 31,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "CountRows('Restaurant Manager_1')"
+                    "text": "CountRows('Restaurant Manager')"
                   }
                 }
               },
@@ -6467,6 +6275,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'admin Dashboard_1'.Rectangle3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'admin Dashboard_1'.Rectangle3_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "admin Dashboard_1",
+                "type": "'admin Dashboard_1'.Rectangle3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'admin Dashboard_1'.Rectangle3_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'admin Dashboard_1'.Rectangle3_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "admin Dashboard_1",
+                "type": "'admin Dashboard_1'.Rectangle3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'admin Dashboard_1'.Gallery1_2.AccessibleLabel"
                 }
               ],
@@ -6647,6 +6515,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'admin Dashboard_2'.Rectangle3_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'admin Dashboard_2'.Rectangle3_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "admin Dashboard_2",
+                "type": "'admin Dashboard_2'.Rectangle3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'admin Dashboard_2'.Rectangle3_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'admin Dashboard_2'.Rectangle3_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "admin Dashboard_2",
+                "type": "'admin Dashboard_2'.Rectangle3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'admin Dashboard_2'.Gallery1_3.AccessibleLabel"
                 }
               ],
@@ -6767,6 +6695,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Restaurant Manager"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Restaurant Manager",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Restaurant Manager",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-NotOfflineConnectors",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Admin login"
                 }
               ],
@@ -6838,36 +6796,6 @@
               },
               "properties": {
                 "member": "Restaurent login",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-NotOfflineConnectors",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Restaurant Manager_1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Restaurant Manager_1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Restaurant Manager_1",
                 "module": "App",
                 "type": "App"
               }
